@@ -214,7 +214,7 @@ def login_multiple_thirdparty() -> rx.Component:
         rx.vstack(
             rx.flex(
                 rx.image(
-                    src="/logo.jpg",
+                    src=("https://github.com/arnaldoquinones/my_portfolio/blob/master/assets/foto_perfil.png?raw=true"),
                     width="2.5em",
                     height="auto",
                     border_radius="25%",
@@ -460,7 +460,7 @@ class TopBannerSignup(rx.ComponentState):
             ~cls.hide,
             rx.flex(
                 rx.image(
-                    src="/logo.jpg",
+                    src="/logo.jpg",   
                     width="2em",
                     height="auto",
                     border_radius="25%",
@@ -523,10 +523,10 @@ def index() -> rx.Component:
                 rx.code(f"{config.app_name}/{config.app_name}.py"),
                 size="5",
             ),
-            top_banner_gradient(), 
-            top_banner_signup(),
+            # top_banner_gradient(), 
+            # top_banner_signup(),
             rx.image(
-    src=r"D:\Users\Arnaldo\Desktop\my_portfolio\assets\foto_perfil.png",  # Ruta relativa al archivo en 'assets'
+    src=("https://github.com/arnaldoquinones/my_portfolio/blob/master/assets/foto_perfil.png?raw=true"),  # Ruta relativa al archivo en 'assets'
     width="150px",  # Ajusta el tamaño según sea necesario
     height="auto",
     border_radius="50%",  # Para hacerlo circular, si lo deseas
